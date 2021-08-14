@@ -2,10 +2,6 @@
 #
 .DS_Store
 
-# template
-ios/
-android/
-
 # Xcode
 #
 build/
