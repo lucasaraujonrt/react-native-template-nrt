@@ -2,9 +2,9 @@ import React from 'react';
 import * as S from './Text.styles';
 
 interface IText {
-  text?: string;
-  textColor: string;
-  textSize: number;
+  text: string;
+  textColor?: string;
+  textSize?: number;
 }
 
 const Text = ({ text, textColor, textSize }: IText) => {

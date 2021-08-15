@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
-import * as S from './Col.style';
+import React from 'react';
+import * as S from './Col.styles';
 
 interface ICol {
-  children: ReactNode;
+  children: React.ReactNode;
   pdTop?: number;
   pdBottom?: number;
   pdLeft?: number;

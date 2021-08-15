@@ -1,11 +1,14 @@
 import styled from 'styled-components/native';
-import * as Window from '@mobile/Services/dimensions';
+import * as Window from '@mobile/services/dimensions';
 
 interface IProps {
   pdTop?: number;
   pdBottom?: number;
   pdLeft?: number;
   pdRight?: number;
+  alignSelf?: string;
+  justifyContent?: string;
+  alignItems?: string;
 }
 
 export const Row = styled.View`
@@ -18,4 +21,8 @@ export const Row = styled.View`
     props.pdLeft ? Window.widthScale(props.pdLeft / 100) : 0}px;
   padding-right: ${(props: IProps) =>
     props.pdRight ? Window.widthScale(props.pdRight / 100) : 0}px;
+  ${(props: IProps) => props.alignSelf && `align-self: ${props.alignSelf}`}
+  ${(props: IProps) => props.alignItems && `align-items: ${props.alignItems}`}
+  ${(props: IProps) =>
+    props.justifyContent && `justify-content: ${props.justifyContent}`}
 `;

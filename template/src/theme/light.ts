@@ -1,6 +1,10 @@
 import { DefaultTheme } from 'styled-components';
 
 const light: DefaultTheme = {
+  tab: {
+    active: '#66519E',
+    background: '#fff',
+  },
   colors: {
     primary: '#66519E',
     background: '#fff',

@@ -1,12 +1,24 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { createStack } from './services/navigation';
 import Login from './pages/Auth/Login';
+import TabNavigator from './routes/TabNavigator';
 
 const MainStack = createStack();
 const ContentStack = createStack();
 const StartStack = createStack();
 
-const routeList: Array<{ name: string; component: ReactNode }> = [];
+const routeList: Array<{ name: string; component: React.ReactNode }> = [
+  {
+    name: 'TabBar',
+    component: (
+      <ContentStack.Screen
+        name="TabBar"
+        component={TabNavigator}
+        key="TabBar"
+      />
+    ),
+  },
+];
 
 const ContentNavigator = () => (
   <ContentStack.Navigator screenOptions={{ headerShown: false }}>

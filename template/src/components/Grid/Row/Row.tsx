@@ -1,17 +1,37 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import * as S from './Row.styles';
 
 interface IRow {
-  children: ReactNode;
+  children: React.ReactNode;
   pdTop?: number;
   pdBottom?: number;
   pdLeft?: number;
   pdRight?: number;
+  alignSelf?: string;
+  justifyContent?: string;
+  alignItems?: string;
 }
 
-const Row = ({ children, pdBottom, pdLeft, pdRight, pdTop }: IRow) => {
+const Row = ({
+  children,
+  pdBottom,
+  pdLeft,
+  pdRight,
+  pdTop,
+  alignSelf,
+  alignItems,
+  justifyContent,
+}: IRow) => {
   return (
-    <S.Row pdTop={pdTop} pdBottom={pdBottom} pdLeft={pdLeft} pdRight={pdRight}>
+    <S.Row
+      alignSelf={alignSelf}
+      alignItems={alignItems}
+      justifyContent={justifyContent}
+      pdTop={pdTop}
+      pdBottom={pdBottom}
+      pdLeft={pdLeft}
+      pdRight={pdRight}
+    >
       {children}
     </S.Row>
   );

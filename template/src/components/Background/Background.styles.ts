@@ -11,3 +11,11 @@ export const Container = styled.View`
       ? props.backgroundColor
       : ({ theme }) => theme.colors.background};
 `;
+
+export const ScrollView = styled.ScrollView`
+  flex: 1;
+  background-color: ${(props: IProps) =>
+    props.backgroundColor
+      ? props.backgroundColor
+      : ({ theme }) => theme.colors.background};
+`;
