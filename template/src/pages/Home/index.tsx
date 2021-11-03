@@ -1,6 +1,6 @@
 import React from 'react';
 import Row from '@mobile/components/Grid/Row/Row';
-import Background from '@mobile/components/Background/Background';
+import { Background } from '@mobile/components';
 import EmptyState from '../../assets/svg/ic_development.svg';
 
 const Home: React.FC = () => {

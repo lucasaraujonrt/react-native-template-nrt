@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithTheme } from '../../test-utils';
+import { renderWithTheme } from '@mobile/test-utils';
 import { TouchableOpacity } from '@mobile/components';
 import { View } from 'react-native';
 
