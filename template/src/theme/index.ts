@@ -1,4 +1,15 @@
-import dark from './dark';
-import light from './light';
+import { DefaultTheme } from 'styled-components/native';
 
-export default { dark, light };
+const theme: DefaultTheme = {
+  tab: {
+    active: '#66519E',
+    background: '#1c1c1c',
+  },
+  colors: {
+    primary: '#66519E',
+    background: '#1c1c1c',
+    text: '#fff',
+  },
+};
+
+export default theme;

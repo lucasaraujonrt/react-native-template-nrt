@@ -21,6 +21,7 @@ export const Button = styled.TouchableOpacity.attrs({
   align-self: center;
   border-radius: ${Window.normalizeScale(100)}px;
   opacity: ${({ disabled }) => (disabled ? 0.6 : 1)};
+  flex-direction: row;
 `;
 
 export const Text = styled.Text`
@@ -28,4 +29,6 @@ export const Text = styled.Text`
   color: ${({ theme }) => theme.colors.text};
 `;
 
-export const Loading = styled.ActivityIndicator``;
+export const Loading = styled.ActivityIndicator`
+  padding-left: ${Window.heightScale(0.01)}px;
+`;

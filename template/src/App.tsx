@@ -1,22 +1,19 @@
 import React from 'react';
-import Toast, { BaseToast } from 'react-native-toast-message';
-import { useColorScheme } from 'react-native';
+import FlashMessage from 'react-native-flash-message';
 import { Provider } from 'react-redux';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components/native';
+import 'jest-styled-components/native';
 import AppContent from './AppContent';
 import store from './store';
 
-import themes from './theme';
+import theme from './theme';
 
 const App: React.FC = () => {
-  const deviceTheme = useColorScheme();
-  const theme = deviceTheme ? themes[deviceTheme] : themes.dark;
-
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <AppContent />
-        <Toast ref={(ref) => Toast.setRef(ref)} style={{ marginTop: 20}} />
+        <FlashMessage position="top" />
       </ThemeProvider>
     </Provider>
   );

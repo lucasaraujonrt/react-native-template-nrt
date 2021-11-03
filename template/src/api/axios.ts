@@ -10,7 +10,7 @@ export enum AxiosStatus {
 const instance = () => {
   const headers = {
     'Content-Type': 'application/json',
-    Authorization: 'toke',
+    Authorization: 'token here',
     'x-api-key': ENV.API_KEY,
   };
 

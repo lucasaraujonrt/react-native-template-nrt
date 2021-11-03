@@ -65,14 +65,14 @@ const ProfileStack = () => {
 
 export const tabBarOptions: BottomTabBarProps = {
   // todo improve to dark mode
-  activeTintColor: themes.dark.tab.active,
+  activeTintColor: themes.tab.active,
   tabStyle: {
     backgroundColor: 'transparent',
     paddingVertical: 2,
     height: Window.heightScale(0.065),
   },
   style: {
-    backgroundColor: themes.dark.tab.background,
+    backgroundColor: themes.tab.background,
     width: Window.widthScale(1),
     height: Window.heightScale(0.07),
     borderColor: 'transparent',

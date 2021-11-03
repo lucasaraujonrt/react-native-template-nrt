@@ -9,6 +9,7 @@ interface IButton {
   disabled: boolean;
   icon?: React.ReactNode;
   onPress: () => void;
+  testID?: string;
 }
 
 const Button = ({
@@ -18,10 +19,16 @@ const Button = ({
   icon,
   disabled,
   onPress,
+  testID,
 }: IButton) => {
   return (
     <S.Container>
-      <S.Button onPress={onPress} width={width} disabled={disabled}>
+      <S.Button
+        onPress={onPress}
+        width={width}
+        disabled={disabled}
+        testID={testID}
+      >
         <S.Text>{title}</S.Text>
         {icon && null}
         {loading && <S.Loading animating={loading} />}
