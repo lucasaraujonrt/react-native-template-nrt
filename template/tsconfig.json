@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
+    "target": "ES2020",
+    "module": "ESNext",
     "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -9,10 +9,9 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
     "paths": {
-      "@mobile/*": [
-        "./src/*"
-      ]
+      "@mobile/*": ["./src/*"]
     },
     "plugins": [
       {
@@ -39,6 +38,7 @@
   },
   "exclude": [
     "node_modules",
+    "dist",
     "babel.config.js",
     "metro.config.js",
     "jest.config.js",
