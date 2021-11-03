@@ -10,7 +10,6 @@ class AppContent extends PureComponent {
   render() {
     return (
       <>
-        <StatusBar barStyle="dark-content" animated />
         <KeyboardAvoidingView
           style={{
             flex: 1,

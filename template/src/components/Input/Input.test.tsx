@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderWithTheme } from '../../test-utils';
+import { renderWithTheme } from '@mobile/test-utils';
 import { Input } from '@mobile/components';
 
 describe('Input Snapshot', () => {

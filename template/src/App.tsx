@@ -2,7 +2,6 @@ import React from 'react';
 import FlashMessage from 'react-native-flash-message';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components/native';
-import 'jest-styled-components/native';
 import AppContent from './AppContent';
 import store from './store';
 

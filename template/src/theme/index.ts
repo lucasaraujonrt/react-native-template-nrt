@@ -3,12 +3,12 @@ import { DefaultTheme } from 'styled-components/native';
 const theme: DefaultTheme = {
   tab: {
     active: '#66519E',
-    background: '#1c1c1c',
+    background: '#fff',
   },
   colors: {
     primary: '#66519E',
-    background: '#1c1c1c',
-    text: '#fff',
+    background: '#fff',
+    text: '#000',
   },
 };
 
