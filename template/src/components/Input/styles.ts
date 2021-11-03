@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export const Container = styled.View`
-  flex-direction: row;
+  flex-direction: column;
 `;
 
 export const TouchableOpacity = styled.TouchableOpacity`
@@ -13,6 +13,8 @@ export const TouchableOpacity = styled.TouchableOpacity`
 `;
 
 export const Input = styled.TextInput`
+  border-width: 1px;
+  width: 100%;
   border-color: ${({ showBorder }: IProps) =>
     showBorder ? ({ theme }) => theme.colors.primary : 'transparent'};
 `;
