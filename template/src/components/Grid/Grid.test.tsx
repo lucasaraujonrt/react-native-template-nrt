@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { renderWithTheme } from '../../test-utils';
+import { renderWithTheme } from '@mobile/test-utils';
 import { Row, Col } from '@mobile/components';
 
 describe('Grid Snapshot', () => {

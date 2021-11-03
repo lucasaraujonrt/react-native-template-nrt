@@ -1,18 +1,32 @@
 import React from 'react';
-import Background from '@mobile/components/Background/Background';
-import { Button, Row } from '@mobile/components';
+import { Button, Row, Background, Input, Col } from '@mobile/components';
 import Toaster from '@mobile/services/toaster';
+import useForm from '@mobile/hooks/useForm';
 
 const Login: React.FC = () => {
+  const [form, onChange, clear] = useForm({ name: '', email: '' });
+
   return (
-    <Background>
-      <Row pdTop={5} alignSelf="center">
+    <Background barStyle="dark-content">
+      <Col>
         <Button
           title="Press Me!! Error"
           disabled={false}
           onPress={() => Toaster.info('Error', 'ao enviar dados')}
         />
-      </Row>
+      </Col>
+      <Col>
+        <Input
+          title="Insira seu nome"
+          value={form.name}
+          onChangeText={(value: string) => onChange('name', value)}
+        />
+        <Input
+          title="Insira seu nome"
+          value={form.name}
+          onChangeText={(value: string) => onChange('name', value)}
+        />
+      </Col>
     </Background>
   );
 };
