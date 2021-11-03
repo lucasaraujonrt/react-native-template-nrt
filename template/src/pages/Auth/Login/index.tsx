@@ -11,7 +11,6 @@ const Login: React.FC = () => {
           title="Press Me!! Error"
           disabled={false}
           onPress={() => Toaster.info('Error', 'ao enviar dados')}
-          testID="button_toaster_info"
         />
       </Row>
     </Background>
