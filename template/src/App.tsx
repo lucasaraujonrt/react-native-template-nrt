@@ -1,4 +1,6 @@
 import React from 'react';
+
+import codePush from 'react-native-code-push';
 import FlashMessage from 'react-native-flash-message';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components/native';
@@ -18,4 +20,6 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default codePush({
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+})(App);
