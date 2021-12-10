@@ -14,8 +14,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "commit": "git-cz",
-    "codepush-ios": "appcenter codepush release-react -a appbase-mblabs/appbase-ios -d Production",
-    "codepush-ios-mandatory": "appcenter codepush release-react -a appbase-mblabs/appbase-ios -m -d Production",
+    "codepush-ios": "appcenter codepush release-react -a appbase-mblabs/appbase-ios -m -d Production --plist-file ./ios/template/Info.plist",
     "codepush-android": "appcenter codepush release-react -a appbase-mblabs/appbase-android -d Production",
     "codepush-android-mandatory": "appcenter codepush release-react -a appbase-mblabs/appbase-android -m -d Production",
     "android-release": "npx react-native run-android --variant=release"
