@@ -13,7 +13,11 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "codepush-ios": "appcenter codepush release-react -a appbase-mblabs/appbase-ios -m -d Production --plist-file ./ios/template/Info.plist",
+    "codepush-android": "appcenter codepush release-react -a appbase-mblabs/appbase-android -d Production",
+    "codepush-android-mandatory": "appcenter codepush release-react -a appbase-mblabs/appbase-android -m -d Production",
+    "android-release": "npx react-native run-android --variant=release"
   },
   "husky": {
     "hooks": {
@@ -37,9 +41,13 @@
     "@react-navigation/bottom-tabs": "6.0.4",
     "@react-navigation/native": "6.0.2",
     "@react-navigation/stack": "6.0.6",
+    "appcenter": "^4.3.0",
+    "appcenter-analytics": "^4.3.0",
+    "appcenter-crashes": "^4.3.0",
     "axios": "0.21.1",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-code-push": "^7.0.4",
     "react-native-config": "1.4.3",
     "react-native-flash-message": "^0.2.0",
     "react-native-fs": "^2.18.0",

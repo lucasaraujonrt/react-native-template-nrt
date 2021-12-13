@@ -22,7 +22,7 @@ const Login: React.FC = () => {
           onChangeText={(value: string) => onChange('name', value)}
         />
         <Input
-          title="Insira seu nome"
+          title="teste codepush"
           value={form.name}
           onChangeText={(value: string) => onChange('name', value)}
         />
