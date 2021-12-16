@@ -1,5 +1,8 @@
 import React from 'react';
-import { Button, Row, Background, Input, Col } from '@mobile/components';
+
+import { APP_VERSION } from '../../../../env.json';
+
+import { Button, Row, Background, Input, Col, Text } from '@mobile/components';
 import Toaster from '@mobile/services/toaster';
 import useForm from '@mobile/hooks/useForm';
 
@@ -22,11 +25,17 @@ const Login: React.FC = () => {
           onChangeText={(value: string) => onChange('name', value)}
         />
         <Input
-          title="Insira seu nome"
+          title="teste codepush"
           value={form.name}
           onChangeText={(value: string) => onChange('name', value)}
         />
       </Col>
+      <Col>
+        <Text
+          text={`Versão: ${APP_VERSION}`}
+        />
+      </Col>
+
     </Background>
   );
 };
